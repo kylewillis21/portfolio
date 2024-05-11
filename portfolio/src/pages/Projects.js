@@ -1,23 +1,33 @@
 import React from 'react'
 import ProjectCard from "../components/ProjectCard"
+import checkers from "../assets/images/MultiplayerCheckers.png"
+import blog from "../assets/images/blogProject.jpg"
+import monkeys from "../assets/images/typewriterMonkeys.jpg"
+import projectsData from "../assets/projectdescriptions/projects.json"
 
 export default function Projects() {
     return (
         <div className='projectContainer'>
             <ProjectCard 
-                title="Multiplayer Checkers"
-                description="Project description"
-                buttonLink="https://github.com/kylewillis21/MultiplayerCheckers"
+                // imageSource={checkers}
+                title={projectsData.checkers.title}
+                description={projectsData.checkers.description}
+                buttonLink={projectsData.checkers.link}
+                technologies={projectsData.checkers.technologies}
             />
             <ProjectCard 
-                title="Blog Project"
-                description="ASP.NET"
-                buttonLink="https://github.com/kylewillis21/BlogProject"
+                imageSource={blog}
+                title={projectsData.blogproject.title}
+                description={projectsData.blogproject.description}
+                buttonLink={projectsData.blogproject.link}
+                technologies={projectsData.blogproject.technologies}
             />
             <ProjectCard 
-                title="Monkey Typewriter"
-                description="testing to see what would happen if we had a much longer description than the rest of the cards"
-                buttonLink="https://github.com/kylewillis21/Monkey-Typewriter"
+                imageSource={monkeys}
+                title={projectsData.monkeytypewriter.title}
+                description={projectsData.monkeytypewriter.description}
+                buttonLink={projectsData.monkeytypewriter.link}
+                technologies={projectsData.monkeytypewriter.technologies}
             />
         </div>
     ) 

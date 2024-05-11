@@ -1,0 +1,20 @@
+{
+    "blogproject": {
+        "title": "Blog Project",
+        "description": "This is a blog website created using ASP.NET Core 7 and EntityFramework",
+        "technologies": "C#, ASP.NET, EntityFramework",
+        "link": "https://github.com/kylewillis21/BlogProject"
+    },
+    "monkeytypewriter": {
+        "title": "Shakespearean Monkeys",
+        "description": "A program that tests the theory of whether a monkey randomly typing out letters can write every word in Shakespeare's Hamlet",
+        "technologies": "Python, Threads",
+        "link": "https://github.com/kylewillis21/Monkey-Typewriter"
+    },
+    "checkers": {
+        "title": "Online Multiplayer Checkers",
+        "description": "This program is designed to allow two different players play a game of Checkers through an established TCP connection. ",
+        "technologies": "C++, ASIO Library, TCP Connections",
+        "link": "https://github.com/kylewillis21/MultiplayerCheckers"
+    }
+}
