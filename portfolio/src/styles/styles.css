@@ -49,3 +49,19 @@ body {
 .nav li:hover {
     background-color: #777;
 }
+
+/* project styling */
+.projectContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customCard {
+    width: 20rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.buttonContainer {
+    bottom: 3px;
+}
