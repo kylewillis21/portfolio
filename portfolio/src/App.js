@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='container'>
+      <div style={{marginRight: '0rem', marginLeft: '0rem', marginTop: '0rem'}}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
