@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectCard from "../components/ProjectCard"
-import checkers from "../assets/images/MultiplayerCheckers.png"
+import checkers from "../assets/images/checkers.jpg"
 import blog from "../assets/images/blogProject.jpg"
 import monkeys from "../assets/images/typewriterMonkeys.jpg"
 import projectsData from "../assets/projectdescriptions/projects.json"
@@ -8,8 +8,9 @@ import projectsData from "../assets/projectdescriptions/projects.json"
 export default function Projects() {
     return (
         <div className='projectContainer'>
+            <div className='project'>
             <ProjectCard 
-                // imageSource={checkers}
+                imageSource={checkers}
                 title={projectsData.checkers.title}
                 description={projectsData.checkers.description}
                 buttonLink={projectsData.checkers.link}
@@ -29,6 +30,7 @@ export default function Projects() {
                 buttonLink={projectsData.monkeytypewriter.link}
                 technologies={projectsData.monkeytypewriter.technologies}
             />
+            </div>
         </div>
     ) 
  }

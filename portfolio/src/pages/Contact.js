@@ -1,7 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl'
-import { VscMail } from "react-icons/vsc";
+import FormControl from 'react-bootstrap/FormControl';
 
 import ContactTab from '../components/ContactTab';
 
