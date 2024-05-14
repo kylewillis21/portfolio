@@ -1,13 +1,21 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl'
+import { VscMail } from "react-icons/vsc";
+
+import ContactTab from '../components/ContactTab';
 
 export default function Contact() {
     return (
         <div className='contactPage'>
+            {/* contact information */}
             <div className='contactInfo'>
                 <h1 className='contactTitle'>Contact Directly</h1>
-                <p className='contactItem'>Email: kylew920@outlook.com</p>
+                <ContactTab name='kylew920@outlook.com' />
+                <ContactTab name='+1 (937) 243-8035' />
+                <ContactTab name='Twitter' link='https://twitter.com/KyleWillis21' isLink={true} />
+                <ContactTab name='LinkedIn' link='https://www.linkedin.com/in/kyle-willis-21/' isLink={true} />
+                <ContactTab name='GitHub' link='https://github.com/kylewillis21' isLink={true} />
             </div>
 
             {/* The contact me directly section */}
