@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import {Link} from 'react-router-dom'
 
 /**
  * ProjectCard is a React component that displays a card with project details.
@@ -13,7 +14,8 @@ import Button from 'react-bootstrap/Button'
  *
  * @returns {JSX.Element} A React Card component with the provided project details.
  */
-export default function ProjectCard({ title, description, buttonLink, imageSource, technologies }) {
+export default function ProjectCard({ title, description, buttonLink, imageSource, technologies, detailsPath }) {
+    const isDetails = detailsPath === undefined ? false : true;
     return (
         <Card
             style={{ width: '20rem', marginBottom: '10px' }}
@@ -26,10 +28,15 @@ export default function ProjectCard({ title, description, buttonLink, imageSourc
                 <Card.Text>{description}</Card.Text>
                 <Card.Text>Technologies Used: {technologies}</Card.Text>
             </Card.Body>
-            <Card.Footer style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <Card.Footer style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                 <a href={buttonLink} target="_blank" rel="noopener noreferrer">
                     <Button variant="primary">See Full Code</Button>
                 </a>
+                {isDetails ? ( 
+                    <Link to={detailsPath}>
+                        <Button variant="primary">More Details</Button>
+                    </Link>
+                ) : null}
             </Card.Footer>
         </Card>
     );
