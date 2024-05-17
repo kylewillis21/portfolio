@@ -82,14 +82,25 @@ export default function Contact() {
     )
 }
 
+/**
+ * Sends an email using the provided name, email, and message.
+ *
+ * @param {string} name - The name of the sender.
+ * @param {string} email - The email address of the sender.
+ * @param {string} message - The message to be sent in the email.
+ * 
+ * @returns {Promise<void>} - A Promise that resolves when the email is sent successfully.
+ *
+ * @throws {Error} - If there is an error sending the email.
+ */
 async function sendEmail(name, email, message) {
     try {
         const response = await fetch('http://localhost:3001/send-email', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ name, email, message }),
+            body: JSON.stringify({ name, email, message })
         });
 
         const data = await response.json();
