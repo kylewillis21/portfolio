@@ -20,6 +20,8 @@ body {
     align-items: center;
     gap: 2rem;
     padding: 0 1rem;
+    /* position: sticky;
+    top: 0; */
 }
 
 .nav ul {
@@ -166,16 +168,56 @@ body {
     color: white;
 }
 
-.aboutPic {
+.infoCard img {
     margin-right: 20px;
+    margin-left: 20px;
     max-width: 20%;
     max-height: 80%;
     border-radius: 15px;
     height: auto;
     width: auto;
     object-fit: cover;
+    align-self: center;
 }
 
-.headerEdu {
-    
+.horzContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.homeNavbar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: var(--primary-background-color);
+}
+
+.homeNavbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeNavbar li:hover {
+    background-color: var(--third-background-color)
+}
+
+.courseList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.courseList ul {
+    list-style: square;
+    padding: 5px;
+}
+
+.courseList li {
+    color: white;
+    padding: 5px;
 }
