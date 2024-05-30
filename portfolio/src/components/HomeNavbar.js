@@ -4,9 +4,9 @@ export default function HomeNavbar() {
     return (
         <nav className='homeNavbar'>
             <ul>
-                <li><a href='#'>About</a></li>
-                <li><a href='#edu'>Education</a></li>
-                <li><a href='#skills'>Skills</a></li>
+                <a href='#'><li>About</li></a>
+                <a href='#edu'><li>Education</li></a>
+                <a href='#skills'><li>Skills</li></a>
             </ul>
         </nav>
     )
