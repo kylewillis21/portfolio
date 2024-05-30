@@ -30,6 +30,7 @@ body {
     list-style: none;
     display: flex;
     gap: 1rem;
+    font-size: x-large;
 }
 
 .nav a {
@@ -42,11 +43,24 @@ body {
 }
 
 .nav li.active {
-    background-color: #555;
+    /* background-color: #555; */
+    color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.nav li {
+    color: white;
+    -webkit-transition: color 0.125s;
+    -moz-transition: color 0.125s;
+    -ms-transition: color 0.125s;
+    -o-transition: color 0.125s;
+    transition: color 0.125s;
 }
 
 .nav li:hover {
-    background-color: #777;
+    /* background-color: #777; */
+    color: var(--primary-hover);
+    border-radius: 10px;
 }
 
 /* project styling */
@@ -160,7 +174,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
 }
 
 .about {
@@ -200,10 +214,31 @@ body {
     gap: 1rem;
     flex-direction: column;
     align-items: center;
+    position: sticky;
+    height: 25%;
+    top: 0;
+    margin-top: 5px;
 }
 
 .homeNavbar li:hover {
     background-color: var(--third-background-color)
+}
+
+.homeNavbar li {
+    padding: 5px;
+    background-color: var(--secondary-background-color);
+    border-radius: 10px;
+
+    -webkit-transition: background-color 0.25s;
+    -moz-transition: background-color 0.25s;
+    -ms-transition: background-color 0.25s;
+    -o-transition: background-color 0.25s;
+    transition: background-color 0.25s;
+}
+
+.homeNavbar a {
+    color: white;
+    text-decoration: none;
 }
 
 .courseList {

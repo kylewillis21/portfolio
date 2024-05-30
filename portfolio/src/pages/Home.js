@@ -16,10 +16,11 @@ export default function Home() {
       <div className='horzContainer'>
          <HomeNavbar />
          <div className='homeContainer'>
-            <Fade duration='2000'>
+            <Fade duration='1500'>
+
                <div className='infoCard'>
                   <div className="about">
-                     <h1>About Me</h1>
+                     <h1 id='about'>About Me</h1>
                      <p>{home.pragraph}</p>
                   </div>
                   <img src={aboutPic} alt='Profile Photo'/>
@@ -27,9 +28,8 @@ export default function Home() {
 
                <div className='infoCard'>
                   <img src={eduPic} alt='education photo'/>
-                  
                   <div className="about">
-                     <h1 className='headerEdu'>Education</h1>
+                     <h1 className='headerEdu' id='edu'>Education</h1>
                      <p>{home.education.description}</p>
                      <p>Graduation Date: {home.education.graduation}</p>
                      <p>Relevant Course Work</p>
@@ -52,7 +52,10 @@ export default function Home() {
                </div>
 
                <div className='infoCard'>
-
+                  <div className='about'>
+                     <h1 id='skills'>Skills</h1>
+                     <p>This is the section where I will start to list the skills I have gained over the course of my career</p>
+                  </div>
                </div>
             </Fade>
          </div>

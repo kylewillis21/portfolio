@@ -2,5 +2,7 @@
     --primary-background-color: #101214;
     --secondary-background-color: #161A1D;
     --third-background-color: #2C333A;
+    --primary-color: #0055CC;
+    --primary-hover: #0C66E4;
     background-color: var(--primary-background-color);
 }

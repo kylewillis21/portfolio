@@ -4,10 +4,9 @@ export default function HomeNavbar() {
     return (
         <nav className='homeNavbar'>
             <ul>
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/projects'>Projects</Link></li>
-                <li><Link to='/about'>About</Link></li>
-                <li><Link to='/contact'>Contact</Link></li>
+                <li><a href='#'>About</a></li>
+                <li><a href='#edu'>Education</a></li>
+                <li><a href='#skills'>Skills</a></li>
             </ul>
         </nav>
     )
