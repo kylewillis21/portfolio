@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     /* used this line whenever i needed to be able to visualize the boxes */
-    /* border: 1px solid blue;    */
+    /* border: 1px solid blue; */
 }
 
 body {
@@ -20,6 +20,8 @@ body {
     align-items: center;
     gap: 2rem;
     padding: 0 1rem;
+    /* position: sticky;
+    top: 0; */
 }
 
 .nav ul {
@@ -28,6 +30,7 @@ body {
     list-style: none;
     display: flex;
     gap: 1rem;
+    font-size: x-large;
 }
 
 .nav a {
@@ -40,11 +43,24 @@ body {
 }
 
 .nav li.active {
-    background-color: #555;
+    /* background-color: #555; */
+    color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.nav li {
+    color: white;
+    -webkit-transition: color 0.125s;
+    -moz-transition: color 0.125s;
+    -ms-transition: color 0.125s;
+    -o-transition: color 0.125s;
+    transition: color 0.125s;
 }
 
 .nav li:hover {
-    background-color: #777;
+    /* background-color: #777; */
+    color: var(--primary-hover);
+    border-radius: 10px;
 }
 
 /* project styling */
@@ -139,4 +155,104 @@ body {
 
 .contactLink {
     color: white;
+}
+
+/* Home page styling */
+.homeContainer {
+    background-color: var(--primary-background-color);
+    border: 1px solid var(--primary-background-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.infoCard {
+    background-color: var(--secondary-background-color);
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.about {
+    width: 55%;
+    color: white;
+}
+
+.infoCard img {
+    margin-right: 20px;
+    margin-left: 20px;
+    max-width: 20%;
+    max-height: 80%;
+    border-radius: 15px;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    align-self: center;
+}
+
+.horzContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.homeNavbar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: var(--primary-background-color);
+}
+
+.homeNavbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    height: 25%;
+    top: 0;
+    margin-top: 5px;
+}
+
+.homeNavbar li:hover {
+    background-color: var(--third-background-color)
+}
+
+.homeNavbar li {
+    padding: 5px;
+    background-color: var(--secondary-background-color);
+    border-radius: 10px;
+
+    -webkit-transition: background-color 0.25s;
+    -moz-transition: background-color 0.25s;
+    -ms-transition: background-color 0.25s;
+    -o-transition: background-color 0.25s;
+    transition: background-color 0.25s;
+}
+
+.homeNavbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.courseList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.courseList ul {
+    list-style: square;
+    padding: 5px;
+}
+
+.courseList li {
+    color: white;
+    padding: 5px;
 }

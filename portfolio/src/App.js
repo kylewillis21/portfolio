@@ -14,7 +14,7 @@ import MonkeyDetails from './pages/details/MonkeyType';
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <div style={{marginRight: '0rem', marginLeft: '0rem', marginTop: '0rem'}}>
         <Routes>
           <Route path="/" element={<Home />} />
