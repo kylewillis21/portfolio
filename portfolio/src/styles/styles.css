@@ -253,6 +253,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.courseList p {
+    text-decoration: underline;
 }
 
 .courseList ul {
@@ -263,4 +268,12 @@ body {
 .courseList li {
     color: white;
     padding: 5px;
+}
+
+.imageSkills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 50%;
 }
