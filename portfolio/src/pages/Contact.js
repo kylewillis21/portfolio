@@ -95,7 +95,7 @@ export default function Contact() {
  */
 async function sendEmail(name, email, message) {
     try {
-        const response = await fetch('http://localhost:3001/send-email', {
+        const response = await fetch('https://portfoliobackendkyle-f371dc3b0c48.herokuapp.com/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
