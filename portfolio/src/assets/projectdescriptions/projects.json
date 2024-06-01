@@ -16,5 +16,10 @@
         "description": "This program is designed to allow two different players play a game of Checkers through an established TCP connection. ",
         "technologies": "C++, ASIO Library, TCP Connections",
         "link": "https://github.com/kylewillis21/MultiplayerCheckers"
+    },
+    "playerneeded": {
+        "title": "Player Needed",
+        "description": "A group finding app designed to allow for users to chat, plan events, and form groups around the Ohio University campus. Created with a team of 4",
+        "technologies": "React Native, JavaScript, Google Firebase, Node.js"
     }
 }
