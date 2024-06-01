@@ -32,7 +32,7 @@ export default function Navbar() {
                 <CustomLink to="/">Home</CustomLink>
                 <CustomLink to="/projects">Projects</CustomLink>
                 <CustomLink to="/contact">Contact</CustomLink>
-                <a href='#' onClick={handleDownload}>Download Resume</a>             
+                <li><a href='#' onClick={handleDownload}>Download Resume</a></li>             
             </ul> 
         </nav>
     );
