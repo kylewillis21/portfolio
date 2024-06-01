@@ -13,13 +13,10 @@ import py from '../assets/images/home/skills/python.png'
 import vscode from '../assets/images/home/skills/vscode.jpg'
 import node from '../assets/images/home/skills/node.png'
 
-
 import HomeNavbar from '../components/HomeNavbar'
+
+
 export default function Home() {
-   
-
-
-
    return (
       <div className='horzContainer'>
          <HomeNavbar />
