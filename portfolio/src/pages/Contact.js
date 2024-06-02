@@ -12,10 +12,17 @@ export default function Contact() {
     const [errors, setErrors] = useState({});
     const [success, setSuccess] = useState(false);
 
+    /**
+     * Handles the form submission and validates the input fields.
+     *
+     * @param {React.FormEvent} e - The form submission event.
+     *
+     * @returns {void} - No return value.
+     */
     const handleSubmit = async (e) => {
         e.preventDefault();
         setSubmitted(true);
-        if(name && email && message) {
+        if (name && email && message) {
             const theName = name;
             const theEmail = email;
             const theMessage = message;
@@ -28,7 +35,6 @@ export default function Contact() {
 
             await sendEmail(theName, theEmail, theMessage);
             setSuccess(true);
-            
         } else {
             const errors = {};
             if (!name) errors.name = 'Name is required.';
@@ -36,7 +42,7 @@ export default function Contact() {
             if (!message) errors.message = 'Message is required.';
             setErrors(errors);
         }
-    }
+    };
 
 
     return (

@@ -72,7 +72,11 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.project p {
+    color: white;
 }
 
 .customCard {
@@ -83,6 +87,11 @@ body {
 
 .buttonContainer {
     bottom: 3px;
+}
+
+.techList {
+    list-style: square;
+    text-align: left;
 }
 
 /* contact styling */
@@ -142,17 +151,22 @@ body {
     height: 30px;
     display: flex;
     justify-content: center;
-    border: solid 2px black;
+    border: solid 1.5px var(--primary-background-color);
     border-radius: 100px;
     /* font-size: 14px; */
     background-color: var(--third-background-color);
     margin-left: 10%;
     margin-right: 10%;
+    flex-wrap: wrap;
     /* align-items: center; */
 }
 
-.contactLink {
+.contactItem a {
     color: white;
+}
+
+.contactItem a:hover {
+    color: var(--primary-hover);
 }
 
 /* Home page styling */

@@ -4,6 +4,29 @@ import Button from 'react-bootstrap/Button'
 import {Link} from 'react-router-dom'
 
 /**
+ * Separates a string into an array of words separated by commas and returns them as a list.
+ *
+ * @param {string} str - The input string to be separated into words.
+ * @returns {JSX.Element} A React list component with the separated words.
+ */
+function separateWordsByComma(str) {
+    var string = str.replace(/"/g, '');
+    const words = string.split(',');
+    return (
+        <>
+        {words.map((word, index) => (
+            <div>{word}</div>
+        ))}
+        </>
+        // <ul className='techList'>
+        //     {words.map((word, index) => (
+        //         <li key={index}>{word}</li>
+        //     ))}
+        // </ul>
+    );
+}
+
+/**
  * ProjectCard is a React component that displays a card with project details.
  *
  * @param {string} title - The title of the project.
@@ -16,6 +39,7 @@ import {Link} from 'react-router-dom'
  */
 export default function ProjectCard({ title, description, buttonLink, imageSource, technologies, detailsPath }) {
     const isDetails = detailsPath === undefined ? false : true;
+    const isLink = buttonLink === undefined ? false : true;
     return (
         <Card
             style={{ width: '20rem', marginBottom: '10px' }}
@@ -26,12 +50,19 @@ export default function ProjectCard({ title, description, buttonLink, imageSourc
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>{description}</Card.Text>
-                <Card.Text>Technologies Used: {technologies}</Card.Text>
+                <Card.Text>
+                    <p>Technologies Used:</p>
+                    
+                    {separateWordsByComma(JSON.stringify(technologies))}
+                    
+                </Card.Text>
             </Card.Body>
             <Card.Footer style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                <a href={buttonLink} target="_blank" rel="noopener noreferrer">
-                    <Button variant="primary">See Full Code</Button>
-                </a>
+                {isLink ? (
+                    <a href={buttonLink} target="_blank" rel="noopener noreferrer">
+                        <Button variant="primary">See Full Code</Button>
+                    </a>
+                ) : null}
                 {isDetails ? ( 
                     <Link to={detailsPath}>
                         <Button variant="primary">More Details</Button>
