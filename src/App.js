@@ -20,6 +20,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/MonkeyType" element={<MonkeyDetails />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </div>
     </>
