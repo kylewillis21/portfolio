@@ -32,7 +32,7 @@ export default function Projects() {
                     description={projectsData.monkeytypewriter.description}
                     buttonLink={projectsData.monkeytypewriter.link}
                     technologies={projectsData.monkeytypewriter.technologies}
-                    // detailsPath={'/projects/MonkeyType'}
+                    detailsPath={'/projects/MonkeyType'}
                 />
                 <ProjectCard
                     imageSource={player}
