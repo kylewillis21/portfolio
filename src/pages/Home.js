@@ -1,5 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
+import { useMediaQuery } from 'react-responsive';
 
 import home from '../assets/home.json'
 import aboutPic from '../assets/images/home/about.jpg'
@@ -17,9 +18,11 @@ import HomeNavbar from '../components/HomeNavbar'
 
 
 export default function Home() {
+   const isDesktop = useMediaQuery({ minWidth: 800 });
+
    return (
       <div className='horzContainer'>
-         <HomeNavbar />
+         {isDesktop && <HomeNavbar />}
          <div className='homeContainer'>
             <Fade duration='1500'>
                {/* about me section */}
