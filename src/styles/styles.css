@@ -11,7 +11,7 @@ body {
 .site-title {
     font-size: 2rem;
 }
-
+/* navbar styling */
 .nav {
     background-color: var(--secondary-background-color);
     color: white;
@@ -41,7 +41,6 @@ body {
 }
 
 .nav li.active {
-    /* background-color: #555; */
     color: var(--primary-color);
     border-radius: 10px;
 }
@@ -61,233 +60,10 @@ body {
     border-radius: 10px;
 }
 
-/* project styling */
-.projectContainer {
-    background-color: var(--primary-background-color);
-    border: 1px solid var(--primary-background-color);
+/* mobile styling */
+@media screen and (max-width: 800px) {
+    .nav ul {
+        gap: .5rem;
+    }
 }
-
-.project {
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.project p {
-    color: white;
-}
-
-.customCard {
-    width: 20rem;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-.buttonContainer {
-    bottom: 3px;
-}
-
-.techList {
-    list-style: square;
-    text-align: left;
-}
-
-/* contact styling */
-.contactPage {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: var(--primary-background-color);
-    color: white;
-}
-
-.contactInfo {
-    order: 1;
-    flex-basis: 20%;
-    border: 1px solid black;
-    margin-right: 20px;
-    margin-left: 10px;
-    margin-top: 10px;
-    background-color: var(--secondary-background-color);
-    border-radius: 30px;
-}
-
-.contactMe {
-    display: flex;
-    order: 2;
-    flex-basis: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-right: 2rem;
-}
-
-.contactName {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.contactSubmit {
-    margin-top: 5px;
-    justify-content: center;
-}
-
-.contactTitle {
-    display: flex;
-    font-size: 28px;
-    justify-content: center;
-    margin: 2px;
-    border-bottom: solid 1px black;
-}
-
-.contactItem {
-    margin: 10px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    border: solid 1.5px var(--primary-background-color);
-    border-radius: 100px;
-    /* font-size: 14px; */
-    background-color: var(--third-background-color);
-    margin-left: 10%;
-    margin-right: 10%;
-    flex-wrap: wrap;
-    /* align-items: center; */
-}
-
-.contactItem a {
-    color: white;
-}
-
-.contactItem a:hover {
-    color: var(--primary-hover);
-}
-
-/* Home page styling */
-.homeContainer {
-    background-color: var(--primary-background-color);
-    border: 1px solid var(--primary-background-color);
-    display: flex;
-    flex-direction: column;
-}
-
-.infoCard {
-    background-color: var(--secondary-background-color);
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.about {
-    width: 55%;
-    color: white;
-}
-
-.about p {
-    font-size: 1.1em;
-}
-
-.infoCard img {
-    margin-right: 20px;
-    margin-left: 20px;
-    max-width: 20%;
-    max-height: 80%;
-    border-radius: 15px;
-    height: auto;
-    width: auto;
-    object-fit: cover;
-    align-self: center;
-}
-
-.horzContainer {
-    display: flex;
-    flex-direction: row;
-}
-
-.homeNavbar {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    background-color: var(--primary-background-color);
-}
-
-.homeNavbar ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    align-items: center;
-    position: sticky;
-    height: 25%;
-    top: 0;
-    margin-top: 5px;
-}
-
-.homeNavbar li:hover {
-    /* background-color: var(--third-background-color) */
-    color: var(--primary-hover);
-}
-
-.homeNavbar li {
-    padding: 5px;
-    /* background-color: var(--secondary-background-color);
-    border-radius: 10px; */
-    /* width: 100%; */
-    display: flex;
-    justify-content: center;
-
-
-    -webkit-transition: color 0.25s;
-    -moz-transition: color 0.25s;
-    -ms-transition: color 0.25s;
-    -o-transition: color 0.25s;
-    transition: color 0.25s;
-}
-
-.homeNavbar a {
-    color: white;
-    text-decoration: none;
-
-}
-
-.courseList {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.courseList p {
-    text-decoration: underline;
-}
-
-.courseList ul {
-    list-style: square;
-    padding: 5px;
-}
-
-.courseList li {
-    color: white;
-    padding: 5px;
-}
-
-.imageSkills {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 50%;
-}
+/* end of navbar styling */
