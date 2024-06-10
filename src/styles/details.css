@@ -17,7 +17,7 @@
 }
 
 /* desktop only styling */
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 800px) {
     .detailsPage {
         display: flex;
         flex-direction: row;
