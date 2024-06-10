@@ -1,5 +1,4 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade'
 
 import ProjectCard from "../components/ProjectCard"
 import checkers from "../assets/images/projects/checkers.jpg"
@@ -32,7 +31,7 @@ export default function Projects() {
                     description={projectsData.monkeytypewriter.description}
                     buttonLink={projectsData.monkeytypewriter.link}
                     technologies={projectsData.monkeytypewriter.technologies}
-                    // detailsPath={'/projects/MonkeyType'}
+                    detailsPath={'/projects/MonkeyType'}
                 />
                 <ProjectCard
                     imageSource={player}

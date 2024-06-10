@@ -58,15 +58,15 @@ export default function ProjectCard({ title, description, buttonLink, imageSourc
                 </Card.Text>
             </Card.Body>
             <Card.Footer style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                {isLink ? (
-                    <a href={buttonLink} target="_blank" rel="noopener noreferrer">
-                        <Button variant="primary">See Full Code</Button>
-                    </a>
-                ) : null}
                 {isDetails ? ( 
                     <Link to={detailsPath}>
                         <Button variant="primary">More Details</Button>
                     </Link>
+                ) : null}
+                {isLink ? (
+                    <a href={buttonLink} target="_blank" rel="noopener noreferrer">
+                        <Button variant="primary">See Full Code</Button>
+                    </a>
                 ) : null}
             </Card.Footer>
         </Card>
