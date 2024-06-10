@@ -1,5 +1,4 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade'
 
 import ProjectCard from "../components/ProjectCard"
 import checkers from "../assets/images/projects/checkers.jpg"
