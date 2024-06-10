@@ -1,6 +1,7 @@
 import React, { useState } from'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useMediaQuery } from 'react-responsive';
 
 import ContactTab from '../components/ContactTab';
 
@@ -11,6 +12,7 @@ export default function Contact() {
     const [submitted, setSubmitted] = useState(false);
     const [errors, setErrors] = useState({});
     const [success, setSuccess] = useState(false);
+    const isDesktop = useMediaQuery({ minWidth: 800 });
 
     /**
      * Handles the form submission and validates the input fields.
@@ -60,13 +62,13 @@ export default function Contact() {
             {/* The contact me directly section */}
             <div className='contactMe'>
                 <div className='contactName'>
-                    <Form.Group controlId='contact.name' style={{width: '40%'}}>
+                    <Form.Group controlId='contact.name'>
                         <Form.Label>Name</Form.Label>
                         <Form.Control style={{backgroundColor: 'lightgray'}} placeholder="Name" value={name} disabled={success} onChange={(e) => setName(e.target.value)} className={submitted && !name ? 'is-invalid' : ''}/>
                         {errors.name && <div className="invalid-feedback">{errors.name}</div>}
                     </Form.Group>
                 
-                    <Form.Group controlId='contact.email' style={{width: '40%'}}>
+                    <Form.Group controlId='contact.email'>
                         <Form.Label>Email address</Form.Label>
                         <Form.Control style={{backgroundColor: 'lightgray'}} type='email' placeholder="name@example.com" value={email} onChange={(e) => setEmail(e.target.value)} disabled={success} className={submitted && !email ? 'is-invalid' : ''}/>
                         {errors.email && <div className="invalid-feedback">{errors.email}</div>}
