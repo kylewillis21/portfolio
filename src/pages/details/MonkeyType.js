@@ -7,7 +7,8 @@ export default function MonkeyDetails() {
 
     return (
     <div className="detailsPage">
-        <img src={banner} className='imgBanner'/>
+        <div className="details">
+        {!isDesktop && <img src={banner} />}
         <div className="purpose">
             <h1>Purpose</h1>
             <p>
@@ -50,7 +51,11 @@ export default function MonkeyDetails() {
                 <li><a href="https://docs.python.org/3/library/threading.html" target="_blank" rel="noopener noreferrer">Threads</a> - Allowing the program to run multiple processes of the same function in order to speed along the process</li>
             </ul>
         </div>
-        <img src={screenshot} className='screenshot'/>
+        </div>
+        {isDesktop && <div className='screenshotContainer'>
+            <img src={screenshot} />
+            <p>An example of the output</p>    
+        </div>}
     </div>
     )
 }
