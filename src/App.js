@@ -13,6 +13,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import MonkeyDetails from './pages/details/MonkeyType';
+import CheckersDetails from './pages/details/Checkers';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/MonkeyType" element={<MonkeyDetails />} />
+          <Route path="/projects/Checkers" element={<CheckersDetails />} />
+
           <Route path="*" element={<Home />} />
         </Routes>
       </div>

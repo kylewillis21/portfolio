@@ -52,9 +52,18 @@ export default function MonkeyDetails() {
             </ul>
         </div>
         </div>
-        {isDesktop && <div className='screenshotContainer'>
-            <img src={screenshot} />
-            <p>An example of the output</p>    
+        {/* {isDesktop && <div className='screenshotContainer'>
+            <h1>Example</h1>
+            <img src={screenshot} />   
+        </div>} */}
+        {isDesktop && <div className="exampleContainer">
+            <h1>Example</h1>
+            <div className="pictureContainer">
+                <div className="pictureWrapper">
+                    <img src={screenshot} className="picture" alt="Monkey" />
+                    <div className="caption">Example of monkeys typing out new words</div>
+                </div> 
+            </div>  
         </div>}
     </div>
     )

@@ -16,30 +16,49 @@
     margin: 10px;
 }
 
+.examples {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* desktop only styling */
 @media screen and (min-width: 800px) {
-    .detailsPage {
+    .exampleContainer {
         display: flex;
-        flex-direction: row;
-    }
-
-    .details {
-        flex-basis: 80%;
-        width: 80%;
-    }
-
-    .screenshotContainer {
+        flex-direction: column;
         margin: 10px;
     }
 
-    .screenshotContainer p {
+    .exampleContainer h1 {
         color: white;
     }
 
-    .screenshotContainer img {
-        height: auto;
+    .pictureContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .pictureWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .picture {
+        height: 80%;
         width: auto;
-        border: 1px solid white;
+        object-fit: contain;
+        margin: 10px;
+    }
+
+    .caption {
+        margin-top: 5px;
+        text-align: center;
+        color: white;
     }
 }
 

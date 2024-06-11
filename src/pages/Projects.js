@@ -17,6 +17,7 @@ export default function Projects() {
                     description={projectsData.checkers.description}
                     buttonLink={projectsData.checkers.link}
                     technologies={projectsData.checkers.technologies}
+                    detailsPath={'/projects/Checkers'}
                 />
                 <ProjectCard 
                     imageSource={blog}
