@@ -106,14 +106,14 @@ export default function Home() {
                      </div>
                   </div>
                   <div className='imageSkills'>
-                     <img src={dotNet}/>
-                     <img src={reactImg}/>
-                     <img src={git}/>
-                     <img src={cpp}/>
-                     <img src={js}/>
-                     <img src={py}/>
-                     <img src={vscode}/>
-                     <img src={node}/>
+                     <img src={dotNet} alt='.NET logo'/>
+                     <img src={reactImg} alt='react logo'/>
+                     <img src={git} alt='GitHub logo'/>
+                     <img src={cpp} alt='C++ logo'/>
+                     <img src={js} alt='JavaScript logo'/>
+                     <img src={py} alt='Python logo'/>
+                     <img src={vscode} alt='Visual Studio Code logo'/>
+                     <img src={node} alt='Node.JS logo'/>
                   </div>
                </div>
                {/* end of skills section */}
