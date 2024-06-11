@@ -29,9 +29,9 @@ export default function Navbar() {
             {/* <Link to="/" className="site-title">Site Name</Link> */}
             <div></div>
             <ul>
-                <CustomLink to="/">Home</CustomLink>
-                <CustomLink to="/projects">Projects</CustomLink>
-                <CustomLink to="/contact">Contact</CustomLink>
+                <CustomLink to="/portfolio">Home</CustomLink>
+                <CustomLink to="/portfolio/projects">Projects</CustomLink>
+                <CustomLink to="/portfolio/contact">Contact</CustomLink>
                 <li><a href='#' onClick={handleDownload}>Resume</a></li>             
             </ul> 
         </nav>
