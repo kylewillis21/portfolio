@@ -17,7 +17,7 @@ export default function Projects() {
                     description={projectsData.checkers.description}
                     buttonLink={projectsData.checkers.link}
                     technologies={projectsData.checkers.technologies}
-                    detailsPath={'/projects/Checkers'}
+                    detailsPath={'/portfolio/projects/Checkers'}
                 />
                 <ProjectCard 
                     imageSource={blog}
@@ -33,7 +33,7 @@ export default function Projects() {
                     description={projectsData.monkeytypewriter.description}
                     buttonLink={projectsData.monkeytypewriter.link}
                     technologies={projectsData.monkeytypewriter.technologies}
-                    detailsPath={'/projects/MonkeyType'}
+                    detailsPath={'/portfolio/projects/MonkeyType'}
                 />
                 <ProjectCard
                     imageSource={player}

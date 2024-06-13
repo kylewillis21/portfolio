@@ -8,7 +8,7 @@ export default function MonkeyDetails() {
     return (
     <div className="detailsPage">
         <div className="details">
-        {!isDesktop && <img src={banner} />}
+        {!isDesktop && <img src={banner} alt="banner"/>}
         <div className="purpose">
             <h1>Purpose</h1>
             <p>

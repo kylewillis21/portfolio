@@ -5,6 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 import home from '../assets/home.json'
 import aboutPic from '../assets/images/home/about.jpg'
 import eduPic from '../assets/images/home/educationLogo.jpg'
+import eduMobile from '../assets/images/home/Russ_background.jpeg'
 import dotNet from '../assets/images/home/skills/dotNet.png'
 import reactImg from '../assets/images/home/skills/react.png'
 import git from '../assets/images/home/skills/git.jpg'
@@ -31,13 +32,13 @@ export default function Home() {
                      <h1 id='about'>About Me</h1>
                      <p>{home.pragraph}</p>
                   </div>
-                  <img src={aboutPic} alt='Profile Photo'/>
+                  {isDesktop && <img src={aboutPic} alt='Profile Photo'/>}
                </div>
                {/* end of about me section*/}
                
                {/* education section */}
                <div className='infoCard'>
-                  <img src={eduPic} alt='education photo'/>
+                  {isDesktop ? <img src={eduPic} className='eduPic' alt='Education Banner'/> : <img src={eduMobile} className='eduPic'/>}
                   <div className="about">
                      <h1 className='headerEdu' id='edu'>Education</h1>
                      <p>{home.education.description}</p>
@@ -105,14 +106,14 @@ export default function Home() {
                      </div>
                   </div>
                   <div className='imageSkills'>
-                     <img src={dotNet}/>
-                     <img src={reactImg}/>
-                     <img src={git}/>
-                     <img src={cpp}/>
-                     <img src={js}/>
-                     <img src={py}/>
-                     <img src={vscode}/>
-                     <img src={node}/>
+                     <img src={dotNet} alt='.NET logo'/>
+                     <img src={reactImg} alt='react logo'/>
+                     <img src={git} alt='GitHub logo'/>
+                     <img src={cpp} alt='C++ logo'/>
+                     <img src={js} alt='JavaScript logo'/>
+                     <img src={py} alt='Python logo'/>
+                     <img src={vscode} alt='Visual Studio Code logo'/>
+                     <img src={node} alt='Node.JS logo'/>
                   </div>
                </div>
                {/* end of skills section */}

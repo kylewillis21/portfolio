@@ -22,6 +22,7 @@ function App() {
       <Navbar/>
       <div style={{marginRight: '0rem', marginLeft: '0rem', marginTop: '0rem'}}>
         <Routes>
+
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />

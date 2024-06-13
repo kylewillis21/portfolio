@@ -1,7 +1,6 @@
 import React, { useState } from'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { useMediaQuery } from 'react-responsive';
 
 import ContactTab from '../components/ContactTab';
 
@@ -12,7 +11,6 @@ export default function Contact() {
     const [submitted, setSubmitted] = useState(false);
     const [errors, setErrors] = useState({});
     const [success, setSuccess] = useState(false);
-    const isDesktop = useMediaQuery({ minWidth: 800 });
 
     /**
      * Handles the form submission and validates the input fields.

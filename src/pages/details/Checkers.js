@@ -14,7 +14,7 @@ export default function CheckersDetails() {
         <div className='detailsPage'>
             {isDesktop && <DetailNavbar />}
             <div className='details'>
-                {!isDesktop && <img src={banner} />}
+                {!isDesktop && <img src={banner} alt='banner' />}
                 <div className='purpose'>
                     <h1>Purpose</h1>
                     <p>
