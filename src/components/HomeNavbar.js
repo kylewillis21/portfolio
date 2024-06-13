@@ -1,5 +1,3 @@
-import { Link, useMatch, useResolvedPath } from 'react-router-dom'
-
 export default function HomeNavbar() {
     return (
         <nav className='homeNavbar'>

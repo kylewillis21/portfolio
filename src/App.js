@@ -14,6 +14,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import MonkeyDetails from './pages/details/MonkeyType';
 import CheckersDetails from './pages/details/Checkers';
+import BlogDetails from './pages/details/Blog';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/MonkeyType" element={<MonkeyDetails />} />
           <Route path="/projects/Checkers" element={<CheckersDetails />} />
+          <Route path="/projects/Blog" element={<BlogDetails />} />
 
           <Route path="*" element={<Home />} />
         </Routes>
