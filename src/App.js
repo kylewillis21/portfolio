@@ -23,12 +23,12 @@ function App() {
       <div style={{marginRight: '0rem', marginLeft: '0rem', marginTop: '0rem'}}>
         <Routes>
 
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/MonkeyType" element={<MonkeyDetails />} />
-          <Route path="/projects/Checkers" element={<CheckersDetails />} />
-          <Route path="/projects/Blog" element={<BlogDetails />} />
+          <Route path="/portfolio" element={<Home />} />
+          <Route path="/portfolio/contact" element={<Contact />} />
+          <Route path="/portfolio/projects" element={<Projects />} />
+          <Route path="/portfolio/projects/MonkeyType" element={<MonkeyDetails />} />
+          <Route path="/portfolio/projects/Checkers" element={<CheckersDetails />} />
+          <Route path="/portfolio/projects/Blog" element={<BlogDetails />} />
 
           <Route path="*" element={<Home />} />
         </Routes>
