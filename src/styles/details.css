@@ -24,6 +24,11 @@
 
 /* desktop only styling */
 @media screen and (min-width: 800px) {
+    .detailsPage {
+        display: flex;
+        flex-direction: row;
+    }
+    
     .exampleContainer {
         display: flex;
         flex-direction: column;
@@ -36,6 +41,7 @@
 
     .pictureContainer {
         display: flex;
+        /* flex-direction: column; */
         justify-content: space-around;
         align-items: flex-start;
         width: 100%;
@@ -55,10 +61,26 @@
         margin: 10px;
     }
 
+    .pictureBlog {
+        height: auto;
+        width: 100%
+    }
+
     .caption {
         margin-top: 5px;
         text-align: center;
         color: white;
+    }
+
+    .purpose h1 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .purpose p {
+        font-size: 1em;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 

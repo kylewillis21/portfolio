@@ -1,5 +1,7 @@
 import { useMediaQuery } from 'react-responsive'
 
+import DetailNavbar from '../../components/DetailsNavbar'
+
 import banner from '../../assets/images/projects/checkers.jpg'
 import client from '../../assets/images/projects/checkers/ClientScreenshotWaiting.png'
 import server from '../../assets/images/projects/checkers/ServerScreenshot.png'
@@ -10,6 +12,7 @@ export default function CheckersDetails() {
 
     return (
         <div className='detailsPage'>
+            {isDesktop && <DetailNavbar />}
             <div className='details'>
                 {!isDesktop && <img src={banner} alt='banner' />}
                 <div className='purpose'>
@@ -21,7 +24,7 @@ export default function CheckersDetails() {
                         established TCP connection.
                     </p>
                 </div>
-                <div className='purpose'>
+                <div className='purpose' id='how'>
                     <h1>How it Works</h1>
                     <text>
                         <p>
@@ -41,27 +44,27 @@ export default function CheckersDetails() {
                         </p>
                     </text>
                 </div>
-                <div className='purpose'>
+                <div className='purpose' id='tech'>
                     <h1>Built With</h1>
                     <ul>
                         <li>C++ - Used as the main programming language throughout the development of this project.</li>
                         <li><a href='https://think-async.com/Asio/asio-1.30.2/doc/' target="_blank" rel="noopener noreferrer">ASIO Library</a> - The library used that simplified the creation of the connection between the client and the server</li>
                     </ul>
                 </div>
+                {isDesktop && <div className='exampleContainer' id='ex'>
+                    <h1>Screenshots</h1>
+                    <div className='pictureContainer'>
+                        <div className='pictureWrapper'>
+                            <img src={server} className='picture' alt='Server'/>
+                            <div className='caption'>Server side shortly after connecting to the client</div>
+                        </div>
+                        <div className='pictureWrapper'>
+                            <img src={client} className='picture' alt='Client'/>
+                            <div className='caption'>Client side waiting on the server to make their move</div>
+                        </div>
+                    </div>
+                </div>}
             </div>
-            {isDesktop && <div className='exampleContainer'>
-                <h1>Examples</h1>
-                <div className='pictureContainer'>
-                    <div className='pictureWrapper'>
-                        <img src={server} className='picture' alt='Server'/>
-                        <div className='caption'>Server side shortly after connecting to the client</div>
-                    </div>
-                    <div className='pictureWrapper'>
-                        <img src={client} className='picture' alt='Client'/>
-                        <div className='caption'>Client side waiting on the server to make their move</div>
-                    </div>
-                </div>
-            </div>}
         </div>
     )
 }

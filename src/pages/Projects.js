@@ -25,6 +25,7 @@ export default function Projects() {
                     description={projectsData.blogproject.description}
                     buttonLink={projectsData.blogproject.link}
                     technologies={projectsData.blogproject.technologies}
+                    detailsPath={'/projects/Blog'}
                 />
                 <ProjectCard 
                     imageSource={monkeys}
