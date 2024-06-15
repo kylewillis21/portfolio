@@ -1,5 +1,5 @@
 import './styles/App.css';
-import "./styles/styles.css";
+import "./styles/navbar.css";
 import "./styles/contact.css";
 import "./styles/project.css";
 import "./styles/home.css";
