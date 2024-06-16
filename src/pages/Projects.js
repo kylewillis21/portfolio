@@ -11,13 +11,12 @@ export default function Projects() {
     return (
         <div className='projectContainer'>
             <div className='project'>  
-                <ProjectCard 
-                    imageSource={checkers}
-                    title={projectsData.checkers.title}
-                    description={projectsData.checkers.description}
-                    buttonLink={projectsData.checkers.link}
-                    technologies={projectsData.checkers.technologies}
-                    detailsPath={'/portfolio/projects/Checkers'}
+                <ProjectCard
+                    imageSource={player}
+                    title={projectsData.playerneeded.title}
+                    description={projectsData.playerneeded.description}
+                    technologies={projectsData.playerneeded.technologies}
+                    detailsPath={"/portfolio/projects/PlayerNeeded"}
                 />
                 <ProjectCard 
                     imageSource={blog}
@@ -28,18 +27,20 @@ export default function Projects() {
                     detailsPath={'/portfolio/projects/Blog'}
                 />
                 <ProjectCard 
+                    imageSource={checkers}
+                    title={projectsData.checkers.title}
+                    description={projectsData.checkers.description}
+                    buttonLink={projectsData.checkers.link}
+                    technologies={projectsData.checkers.technologies}
+                    detailsPath={'/portfolio/projects/Checkers'}
+                />
+                <ProjectCard 
                     imageSource={monkeys}
                     title={projectsData.monkeytypewriter.title}
                     description={projectsData.monkeytypewriter.description}
                     buttonLink={projectsData.monkeytypewriter.link}
                     technologies={projectsData.monkeytypewriter.technologies}
                     detailsPath={'/portfolio/projects/MonkeyType'}
-                />
-                <ProjectCard
-                    imageSource={player}
-                    title={projectsData.playerneeded.title}
-                    description={projectsData.playerneeded.description}
-                    technologies={projectsData.playerneeded.technologies}
                 />
             </div>
         </div>

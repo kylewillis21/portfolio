@@ -52,10 +52,11 @@
         flex-direction: column;
         align-items: center;
         margin: 10px;
+        /* height: 100px; */
     }
 
     .picture {
-        height: 80%;
+        /* height: 80%; */
         width: auto;
         object-fit: contain;
         margin: 10px;
@@ -64,6 +65,11 @@
     .pictureBlog {
         height: auto;
         width: 100%
+    }
+
+    .picturePlayer {
+        height: 300px;
+        width: auto;
     }
 
     .caption {

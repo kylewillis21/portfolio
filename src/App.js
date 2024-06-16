@@ -15,6 +15,7 @@ import Projects from './pages/Projects';
 import MonkeyDetails from './pages/details/MonkeyType';
 import CheckersDetails from './pages/details/Checkers';
 import BlogDetails from './pages/details/Blog';
+import PlayerNeedDetails from './pages/details/PlayerNeeded';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/portfolio/projects/MonkeyType" element={<MonkeyDetails />} />
           <Route path="/portfolio/projects/Checkers" element={<CheckersDetails />} />
           <Route path="/portfolio/projects/Blog" element={<BlogDetails />} />
+          <Route path="/portfolio/projects/PlayerNeeded" element={<PlayerNeedDetails />} />
 
           <Route path="*" element={<Home />} />
         </Routes>
